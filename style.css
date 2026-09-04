@@ -1,113 +1,47 @@
-* { box-sizing: border-box; }
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #222;
-  background-color: #F4F6F8;
-  background-image: linear-gradient(#E3E9EF 1px, transparent 1px),
-                     linear-gradient(90deg, #E3E9EF 1px, transparent 1px);
-  background-size: 32px 32px;
-  line-height: 1.6;
-}
-
-.wrap {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-a { color: #2E6FB3; }
-
-h1, h2, h3 { margin: 0 0 10px; }
-
-p { margin: 0 0 10px; }
-
-/* Header */
-.site-header {
-  background: #ffffff;
-  border-bottom: 1px solid #DDE3E9;
-}
-
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-}
-
-.logo { font-weight: bold; }
-
-.main-nav a {
-  margin-left: 18px;
-  text-decoration: none;
-  color: #333;
-  font-size: 14px;
-}
-
-.main-nav a:hover { color: #2E6FB3; }
-
-/* Hero */
-.hero {
   text-align: center;
-  padding: 60px 0 40px;
+  padding: 20px;
+  background-color: #EFF3F7;
+  background-image: linear-gradient(#DCE6F0 1px, transparent 1px),
+                     linear-gradient(90deg, #DCE6F0 1px, transparent 1px);
+  background-size: 30px 30px;
 }
 
-.hero-img {
+h1, h2 {
+  margin: 20px 0 10px;
+}
+
+img {
   border-radius: 50%;
-  margin-bottom: 16px;
+  margin: 10px 0;
 }
-
-.hero h1 { font-size: 26px; }
-
-/* Video */
-.video-section { padding: 30px 0; }
 
 .video-embed {
   position: relative;
   width: 100%;
-  padding-top: 56.25%;
+  max-width: 640px;
+  margin: 20px auto;
+  padding-top: 36%;
   background: #000;
 }
 
 .video-embed iframe {
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   border: 0;
 }
 
-/* Projects */
-.projects { padding: 30px 0; }
-
-.project-list {
-  display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(3, 1fr);
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.project-card {
-  background: #ffffff;
-  border: 1px solid #DDE3E9;
-  border-radius: 6px;
-  padding: 16px;
-}
-
-/* Contact */
-.contact { padding: 30px 0 60px; }
-
-/* Footer */
-.site-footer {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 13px;
-  color: #777;
-  border-top: 1px solid #DDE3E9;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .project-list { grid-template-columns: 1fr; }
-  .main-nav a { margin-left: 12px; }
+section {
+  margin-bottom: 40px;
 }
