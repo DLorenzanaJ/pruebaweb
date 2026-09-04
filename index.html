@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Rivera — Desarrollador Web</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#inicio" class="logo">AR<span>.dev</span></a>
+    <nav class="main-nav" id="main-nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section id="inicio" class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="hero-tag">Portafolio — v1.0</p>
+        <h1>Construyo interfaces web claras, rápidas y bien hechas.</h1>
+        <p class="hero-lede">Soy Alex Rivera, desarrollador front-end. Diseño y programo sitios estáticos con HTML, CSS y JavaScript, y los despliego con GitHub Pages.</p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-ghost">Escríbeme</a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt>Proyectos</dt><dd>03</dd></div>
+          <div><dt>Stack base</dt><dd>HTML · CSS · JS</dd></div>
+          <div><dt>Hosting</dt><dd>GitHub Pages</dd></div>
+        </dl>
+      </div>
+      <div class="hero-figure">
+        <img src="profile.svg" alt="Ilustración estilo plano técnico de un desarrollador trabajando frente a una laptop" width="440" height="440">
+      </div>
+    </div>
+  </section>
+
+  <section id="video" class="video-section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Presentación</p>
+        <h2>Un poco sobre cómo trabajo</h2>
+      </div>
+      <div class="video-frame">
+        <div class="video-frame-bar">
+          <span></span><span></span><span></span>
+          <p>presentacion.mp4</p>
+        </div>
+        <div class="video-embed">
+          <iframe
+            src="https://www.youtube.com/embed/lH9DhQv6nqo"
+            title="Video de presentación"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos" class="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Trabajo</p>
+        <h2>Proyectos recientes</h2>
+      </div>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-thumb thumb-a" aria-hidden="true"></div>
+          <div class="project-body">
+            <h3>Panel de gastos personales</h3>
+            <p>Aplicación web para registrar y visualizar gastos mensuales por categoría, con gráficos generados en JavaScript.</p>
+            <ul class="tag-list">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <a href="#" class="project-link">Ver repositorio →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb thumb-b" aria-hidden="true"></div>
+          <div class="project-body">
+            <h3>Catálogo de recetas</h3>
+            <p>Sitio estático con buscador y filtros por ingrediente, pensado para cargar rápido incluso con conexiones lentas.</p>
+            <ul class="tag-list">
+              <li>HTML</li><li>CSS</li><li>JSON</li>
+            </ul>
+            <a href="#" class="project-link">Ver repositorio →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb thumb-c" aria-hidden="true"></div>
+          <div class="project-body">
+            <h3>Clon de landing page</h3>
+            <p>Reproducción pixel a pixel de una landing page real como ejercicio de maquetación responsiva y animaciones CSS.</p>
+            <ul class="tag-list">
+              <li>HTML</li><li>CSS</li>
+            </ul>
+            <a href="#" class="project-link">Ver repositorio →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-copy">
+        <p class="eyebrow">Contacto</p>
+        <h2>Hablemos de tu próximo proyecto</h2>
+        <p class="contact-lede">Escríbeme directamente o usa el formulario. Suelo responder en menos de dos días.</p>
+        <ul class="contact-list">
+          <li><span>Correo</span><a href="mailto:hola@alexrivera.dev">hola@alexrivera.dev</a></li>
+          <li><span>GitHub</span><a href="https://github.com/" target="_blank" rel="noopener">github.com/tu-usuario</a></li>
+          <li><span>LinkedIn</span><a href="https://linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/tu-usuario</a></li>
+        </ul>
+      </div>
+      <form class="contact-form" id="contact-form" novalidate>
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+        <label for="email">Correo</label>
+        <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="4" placeholder="Cuéntame sobre tu proyecto" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© <span id="year"></span> Alex Rivera. Sitio desplegado con GitHub Pages.</p>
+    <a href="#inicio">Volver arriba ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
